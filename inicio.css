@@ -1,0 +1,785 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+/*seccion inico*/
+#inicio{
+  background:linear-gradient(rgba(0, 0, 0, 0.301),rgba(0, 11, 11, 0.301)),url(fondazo.png);
+  background-size: cover;
+  background-position: center center;
+  height: 135vh;
+
+}
+
+/*textos de binevenida(pagina de inicio) */
+
+#inicio .contenido header{
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: 100;
+  top: 0;
+}
+/* esto es lo que posiciona todos los elemnetos del contenido en columnas*/
+#inicio .contenido header .contenido-header{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px ;
+}
+
+#inicio .contenido header .contenido-header h2{
+  text-align: center;
+  color: rgb(211, 19, 236);
+}
+#inicio .contenido header .contenido-header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+#inicio .contenido header .contenido-header nav ul li a {
+  text-decoration: none;
+  color:white;
+  margin: 0 12px;
+  font-weight: 400;
+  transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul a:hover{
+  color: rgb(255, 81, 0);
+}
+/* color e imagen de inicio*/
+#inicio .contenido .saludo-kalu{
+  /*max-width: 1100px;*/
+  height: 100vh;
+  margin: auto; 
+  display: flex;  
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  
+}
+#inicio .contenido .titulo-bienvenida{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 90px;
+  color:rgb(255, 255, 255);  
+ 
+  
+}
+
+
+
+
+#inicio .contenido .redes a{
+  text-decoration: none;
+  margin: 0 20px;/* esto es para generar un espacio en linea verdical asi: icono1  icono2 */
+  font-size: 20px;
+
+} 
+
+.kalu{
+  color: rgb(245, 250, 250);
+
+}
+
+.logo-inicio{
+  float: left ;
+  width: 32px;
+}
+.logo-inicio{
+  width: 35px;
+}
+
+.textico h1{
+color:rgb(255, 136, 0);
+position: relative;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textico p{
+
+color:rgb(0, 0, 0);
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;   
+
+
+}
+
+#inicio .textico{ 
+  font-size: 35px;    
+  max-width: 1100px;
+  height: 100vh;
+  margin: auto;
+  color:#ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  
+
+#inicio-texto {
+  max-width: 1100px;
+  height: auto;
+  margin: auto;
+  color:#f4f4f4;
+  display: flex;
+  padding: 70px 15px;/*70px es el espacio que se genera donde termina la seccion, 15px es para comprimir el texto*/
+  
+}
+
+#inicio-texto .contenido-texto{
+  margin: 0 40px;
+}
+ 
+/* para la solucion del problema del footer, se corrigio la secion del contenido separando
+el id de la section y la clase del div, mejorando el renderizado de la pagina, solucionando problemas
+del footer*/
+
+footer{
+  background-color: #080808;
+  color:white ;
+  text-align: center;
+  padding: 30px 0;/*el alto del footer*/
+}
+
+/*caracteristicas con las que se va a definir el futer de manera estandarizada*/
+  
+.div_footer{
+  
+ text-align: center;
+ 
+}
+.texto_footer{
+  color: white;
+  font-size: 15px;
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: 450;
+}
+
+.titulo_footer{
+  color: white;
+  font-size: 30px;
+  font-weight: 450;
+  
+}
+
+.enlace_footer{
+  color: orange;
+}
+.enlace_footer:hover{
+  text-decoration: none;
+}
+.div_footer .img-footer{
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  left: auto;
+}
+
+.div_footer .img-footer-marcas img{
+  width: 50px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* para el posicionamiento del footer, en este archivo es mejor colocar la caracteristica
+position: relative;.*/
+
+
+
+/*-------------------
+---------------------
+hasta aca llega el estandar de todas las seciones de la pagina
+---------------------
+---------------------*/
+
+
+/* fuentes, colores y ubicaciones del contenido de la seccion de inicio*/
+#inicio-texto .titulo-texto1{
+color:blueviolet;
+font-family:Verdana, Geneva, Tahoma, sans-serif ;
+font-size: 65px;
+margin-top: 60px;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+#inicio-texto .titulo-texto{
+  color:blueviolet;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 65px;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+  }
+
+#inicio-texto .subtituloh2-texto{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  margin: 10px;
+  text-align: left;
+  color:black   ;
+}
+
+#inicio-texto .subtituloh3-texto{
+  color:rgba(0, 0, 0, 0.727);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin-top: 5px;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  margin-bottom: 15px;
+  color: #080808;
+}
+
+#inicio-texto .subtituloh3-textoc{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:black;
+  font-size: 30px;
+  text-align:center;
+  margin:20px;
+  margin-bottom: 20px;
+}
+  
+
+
+#inicio-texto .texto-inicio{
+  color:rgb(70, 69, 69);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+}
+
+
+
+#inicio-texto .requisitos-inicio{
+  color:rgba(0, 0, 0, 0.727);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: 70px;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  
+}
+
+#inicio-texto .requisitos-inicio .cho{
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+
+.asociados{
+  text-align: center;
+  font-size: 60px;
+}
+
+/* para el posicionamiento del footer, en este archivo es mejor colocar la caracteristica
+position: relative;.*/
+
+.div_footer .img-footer-marcas img{
+  width: 50px;
+  height: auto;
+  object-fit: cover;
+}
+
+.icono-nav{
+  background-color: white;
+}
+
+  /*_______________
+  _________________
+  inicio de la pagina responsitive
+  _________________
+  _________________
+  /*
+
+/*
+CELULARES
+
+Mínima medida
+Ancho: 354 = 6cm
+Máxima medida
+Ancho: 451px = 7.64
+
+Especiales medida máxima:
+Ancho: 768px = 13cm
+Ancho: 820px = 13.8 cm
+
+Especiales medida mínima
+Ancho: 280px = 4.7cm
+
+TABLETS 
+ancho: 1000px = 17 cm
+*/
+
+
+
+/*------------------------
+----------994-------------
+-------------------------*/
+
+
+
+
+
+
+@media screen and (max-width:994px) 
+  
+{
+   /*imagen fondo*/
+  
+   #inicio{
+    background:linear-gradient(rgba(0, 0, 0, 0.301),rgb(0,0,0,0.2)),url(fondazo.png);
+    background-position: center center;
+    height:160vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:auto;
+
+  }
+   /*#inicio{
+    background:linear-gradient(rgba(0, 0, 0, 0.301),rgba(0, 11, 11, 0.301)),url(fondazo.png);
+    background-position: center center;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+  
+  }*/
+  /*para que no se vean las redes*/
+  .redes a {
+    display: inline-block;
+  } 
+
+  /*para que no se vean los enslaces*/
+  nav{
+    display: none;
+
+  }
+  /*para el nav resposivo */
+  nav.responsive{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.836);
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 10px 0;
+
+  }
+
+  nav.responsive ul{
+    display: block !important;
+    text-align: center;
+  }
+  nav.responsive ul a:hover{
+    text-decoration: underline;
+    text-decoration-color:orange ;
+  }
+
+  nav.responsive ul li{
+    margin: 5px 0;
+  }
+
+    /*header(barra de navegacion)*/
+  #inicio .contenido header{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    top: 0;
+  }
+  /*tres rayitas*/
+  .contenido-header #icono-nav {   
+    
+    align-items: left;
+    color:  rgb(255, 255, 255);
+    height: 21px;
+    object-position: right;
+    padding-left: 10px;
+    margin-right:auto;
+   
+  }
+  /*logo de kalu nav*/
+  #inicio .contenido h1 .logo-inicio{
+    font-size: 18px;
+    
+  }
+  
+  
+  /*saludo de fondo (div)*/
+  #inicio .contenido .saludo-kalu  {
+    height: 100vh;
+    margin: auto; 
+    display: flex;  
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+    
+    
+  }
+  
+  /* saludo fondo (titulo bienvenida)*/
+  #inicio .contenido .titulo-bienvenida{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 55px;
+    color:rgb(255, 255, 255);  
+    height: 0vh ;
+  }
+  /*informacion de kalu*/
+  #inicio-texto .contenido-texto{
+    margin: auto;
+  }
+  
+  #inicio-texto .contenido-texto .titulo-texto1{
+    color:blueviolet;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 45px;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+  
+  #inicio-texto .contenido-texto .subtituloh2-texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+    color:black;
+  }
+  
+  #inicio-texto .contenido-texto .texto-inicio{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color:black;
+    text-align: center;
+  }
+
+  #inicio-texto .contenido-texto .subtituloh3-texto{
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+
+  }
+
+  #inicio-texto .contenido-texto .requisitos-inicio{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+  
+  }
+
+  #inicio-texto .contenido-texto .titulo-texto{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+
+  #inicio-texto .contenido-texto .subtituloh3-textoc{
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:blueviolet;
+
+  }
+  
+  /*secccion del footer 390px*/
+  footer{
+    background-color: #080808;
+    color:white ;
+    text-align: center;
+    padding: 30px 0;/*el alto del footer*/
+  }
+  
+  /*caracteristicas con las que se va a definir el futer de manera estandarizada*/
+    
+  .div_footer{
+    
+   text-align: center;
+   
+  }
+  .texto_footer{
+    color: white;
+    font-size: 17px;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 450;
+  }
+  
+  .titulo_footer{
+    color: white;
+    font-size: 30px;
+    font-weight: 450;
+    
+  }
+  
+  .enlace_footer{
+    color: orange;
+  }
+  .enlace_footer:hover{
+    text-decoration: none;
+  }
+  .div_footer .img-footer{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    left: auto;
+  }
+  
+  .div_footer .img-footer-marcas img{
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+}
+
+
+
+
+/*---------------
+------550---------
+-----------------*/
+
+
+
+
+
+@media screen and (max-width:550px) 
+  
+{
+   /*imagen fondo*/
+  #inicio{
+    background:linear-gradient(rgba(0, 0, 0, 0.301),rgb(0,0,0,0.2)),url(fondazo.png);
+    background-position: center center;
+    height:60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  /*para que no se vean las redes*/
+  .redes a {
+    display: none;
+  } 
+
+  /*para que no se vean los enslaces*/
+  nav{
+    display: none;
+
+  }
+  /*para el nav resposivo */
+  nav.responsive{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.836);
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 10px 0;
+
+  }
+
+  nav.responsive ul{
+    display: block !important;
+    text-align: center;
+  }
+  
+  
+  nav.responsive ul li{
+    margin: 5px 0;
+  }
+
+    /*header(barra de navegacion)*/
+  #inicio .contenido header{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    top: 0;
+  }
+  /*tres rayitas*/
+  .contenido-header #icono-nav {   
+    
+    align-items: left;
+    color:  rgb(255, 255, 255);
+    height: 21px;
+    object-position: right;
+    display: inline-block;
+    margin-left:auto;
+  }
+  /*logo de kalu nav*/
+  #inicio .contenido h1 .logo-inicio{
+    font-size: 10px;
+    
+  }
+  
+  
+  /*saludo de fondo (div)*/
+  #inicio .contenido .saludo-kalu  {
+   
+    justify-content: space-around;
+    text-align: center;
+    margin: 35px;
+    height: 50vh;
+    
+    
+    
+  }
+  
+  /* saludo fondo (titulo bienvenida)*/
+  #inicio .contenido .titulo-bienvenida{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color:rgb(255, 255, 255);  
+   
+   
+  }
+ 
+  /*informacion de kalu*/
+  #inicio-texto .contenido-texto{
+  margin: auto;
+}
+  
+  #inicio-texto .contenido-texto .titulo-texto1{
+    color:blueviolet;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 35px;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+  
+  #inicio-texto .contenido-texto .subtituloh2-texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    color:black;
+  }
+  
+  #inicio-texto .contenido-texto .texto-inicio{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color:black;
+    text-align: center;
+  }
+
+  #inicio-texto .contenido-texto .subtituloh3-texto{
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+
+  }
+
+  #inicio-texto .contenido-texto .requisitos-inicio{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+  
+  }
+
+  #inicio-texto .contenido-texto .titulo-texto{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+
+  #inicio-texto .contenido-texto .subtituloh3-textoc{
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:blueviolet;
+
+  }
+
+  
+  
+  /*secccion del footer 280px*/
+  footer{
+    background-color: #080808;
+    color:white ;
+    text-align: center;
+    padding: 30px 0;/*el alto del footer*/
+  }
+  
+  /*caracteristicas con las que se va a definir el futer de manera estandarizada*/
+    
+  .div_footer{
+    
+   text-align: center;
+   
+  }
+  .texto_footer{
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 450;
+  }
+  
+  .titulo_footer{
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+    
+  }
+  
+  .enlace_footer{
+    color: orange;
+  }
+  .enlace_footer:hover{
+    text-decoration: none;
+  }
+  .div_footer .img-footer{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    left: auto;
+  }
+  
+  .div_footer .img-footer-marcas img{
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+

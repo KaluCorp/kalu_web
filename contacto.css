@@ -1,0 +1,702 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+/*seccion inico*/
+#inicio{
+  background:linear-gradient(rgba(32, 32, 32, 0.3),rgb(0,0,0,0.2)),url(fondazo.png);
+  background-size: cover;
+  background-position: center center;
+  height: 135vh;
+
+}
+/*textos de binevenida(pagina de inicio) */
+
+#inicio .contenido header{
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 100;
+  top: 0;
+}
+/* esto es lo que posiciona todos los elemnetos del contenido en columnas*/
+#inicio .contenido header .contenido-header{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px ;
+}
+#inicio .contenido header .contenido-header h2{
+  text-align: center;
+  color: rgb(211, 19, 236);
+}
+#inicio .contenido header .contenido-header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+#inicio .contenido header .contenido-header nav ul li a {
+  text-decoration: none;
+  color:white;
+  margin: 0 12px;
+  font-weight: 400;
+  transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul a:hover{
+  color: rgb(255, 81, 0);
+}
+/* color e imagen de inicio*/
+#inicio .contenido .saludo-kalu{
+  max-width: 1100px;
+  height: 100vh;
+  margin: auto; 
+  display: flex;  
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  
+}
+#inicio .contenido .titulo-bienvenida{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 85px;
+  color:rgb(255, 255, 255);  
+  text-align:center;
+ 
+  
+}
+#inicio .contenido .texto-bienvenida{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+
+
+#inicio .contenido .redes a{
+  text-decoration: none;
+  margin: 0 20px;/* esto es para generar un espacio en linea verdical asi: icono1  icono2 */
+  font-size: 20px;
+
+} 
+
+.kalu{
+  color: rgb(245, 250, 250);
+
+}
+
+.logo-inicio{
+  float: left ;
+  width: 32px;
+}
+.logo-inicio{
+  width: 35px;
+}
+
+.textico h1{
+color:rgb(255, 136, 0);
+position: relative;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textico p{
+
+color:rgb(0, 0, 0);
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;   
+
+
+}
+
+#inicio .textico{ 
+  font-size: 35px;    
+  max-width: 1100px;
+  height: 100vh;
+  margin: auto;
+  color:#ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  
+
+#inicio-texto {
+  max-width: 1100px;
+  height: auto;
+  margin: auto;
+  color:#f4f4f4;
+  display: flex;
+  padding: 70px 15px;/*70px es el espacio que se genera donde termina la seccion, 15px es para comprimir el texto*/
+  
+}
+
+#inicio-texto .contenido-texto{
+  margin: 0 40px;
+}
+ 
+/* para la solucion del problema del footer, se corrigio la secion del contenido separando
+el id de la section y la clase del div, mejorando el renderizado de la pagina, solucionando problemas
+del footer*/
+
+footer{
+  background-color: #080808;
+  color:white ;
+  text-align: center;
+  padding: 30px 0;/*el alto del footer*/
+}
+
+/* para el posicionamiento del footer, en este archivo es mejor colocar la caracteristica
+position: relative;.*/
+/*-------------------
+---------------------
+hasta aca llega el estandar de todas las seciones de la pagina
+---------------------
+---------------------*/
+
+
+  #inicio-texto .texto-inicio_last{
+    color:rgb(70, 69, 69);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    padding-bottom: 30%;
+  }
+
+/*esto es otra mamada*/
+#img-marcas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  margin-top: 100px;
+  
+  
+}
+
+#img-marcas .sponsors-img img{
+  max-width: 100%;
+  height: 100px;
+  justify-content: space-between 30ch;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  
+  }
+  .asociados{
+  text-align: center;
+  font-size: 50px;
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 30px; 
+  height: 200px; 
+  text-shadow:#b01bca;
+  }
+
+
+/*caracteristicas con las que se va a definir el futer de manera estandarizada*/
+  
+.div_footer{
+  
+ text-align: center;
+ 
+}
+.texto_footer{
+  color: white;
+  font-size: 15px;
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: 450;
+}
+
+.titulo_footer{
+  color: white;
+  font-size: 30px;
+  font-weight: 450;
+  
+}
+
+.enlace_footer{
+  color: orange;
+}
+.enlace_footer:hover{
+  text-decoration: none;
+}
+.div_footer .img-footer{
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  left: auto;
+}
+
+.div_footer .img-footer-marcas img{
+  width: 50px;
+  height: auto;
+  object-fit: cover;
+}
+
+footer .div_footer .toshiba-logo{
+    width:110px;
+    object-fit: cover;
+    top:20px;
+    height: 30px  ;
+    border-radius: 30px;
+    
+}
+footer .div_footer .img-footer-marcas .lenovo-logo{
+
+    width:100px ;
+    border-radius: 30px;
+    object-fit: cover;
+
+}
+
+/*seccion contacto*/
+#contacto{
+  padding: 170px 170px;/*para separar la seccion(moverla por pixeles)*/
+
+}
+#contacto .titulo-seccion{
+  margin-bottom: 20px;/*para separar el titulo de lo otro*/
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;/*para poner el texto en mayuculas*/
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color:#ff9100 ;
+  text-decoration-thickness:5px ;
+  margin-top: 80px;
+}
+
+#contacto .contenedor-form{
+  max-width: 1100px;
+  margin: 50px;
+}
+#contacto .contenedor-form .fila_mitad{
+  margin-bottom: 15px;/*para separar los texbox hacia arriba*/
+}
+#contacto .contenedor-form .fila_mitad{
+  display: flex;
+  justify-content:space-evenly;/*para separar en una linea horizontal */
+  gap: 5px;
+  /*margin: 5px;*/
+}
+#contacto .contenedor-form .fila_tema{
+  margin-bottom: 15px;
+  display: flex;
+  justify-content:space-evenly;/*para separar en una linea horizontal */
+  gap: 5px;
+ 
+}
+#contacto .contenedor-form input,#contacto .contenedor-form textarea{
+  /*para darle margen(redonda)a los cuadros de texto*/
+  padding: 20px;
+  border-radius: 20px;
+  border:  1px solid #000000;
+}
+#contacto .contenedor-form .input-mitad{
+  width: 50%;/*para darle tamaño al ancho del cuadro de texto*/
+}
+
+#contacto .contenedor-form .input-full{
+  width: 100%;
+}
+#contacto .btn-enviar{
+  display: block;
+  margin: auto;
+  /*estos dos son para centrar el boton*/
+  cursor: pointer;
+  transition: .5s;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight:bold ;
+  margin-top: 20px;
+}
+#contacto .btn-enviar:hover{
+  background-color: #ff9100;
+  color: rgb(0, 0, 0);
+}
+#contacto .informacion-contacto{
+  text-align: center;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#contacto .informacion-contacto b{
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ff9100;
+}
+
+
+
+
+
+/*--------------
+------994-------
+------------*/
+
+
+
+
+@media screen and (max-width:994px) 
+  
+{
+  /*imagen fondo*/
+ #inicio{
+    background:linear-gradient(rgba(0, 0, 0, 0.301),rgb(0,0,0,0.2)),url(fondazo.png);
+    background-position: center center;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:auto;
+
+  }
+  /*para que no se vean las redes*/
+  .redes a {
+    display: inline-block;
+  } 
+
+  /*para que no se vean los enslaces*/
+  nav{
+    display: none;
+
+  }
+  /*para el nav resposivo */
+  nav.responsive{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.836);
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 10px 0;
+
+  }
+
+  nav.responsive ul{
+    display: block !important;
+    text-align: center;
+  }
+  nav.responsive ul a:hover{
+    text-decoration: underline;
+    text-decoration-color:orange ;
+  }
+
+  nav.responsive ul li{
+    margin: 5px 0;
+  }
+
+    /*header(barra de navegacion)*/
+  #inicio .contenido header{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    top: 0;
+  }
+  /*tres rayitas*/
+  .contenido-header #icono-nav {   
+    
+    align-items: left;
+    color:  rgb(255, 255, 255);
+    height: 21px;
+    object-position: right;
+    display: inline-block;
+    padding-left: 10px;
+    margin-right:auto;
+  }
+  /*logo de kalu nav*/
+  #inicio .contenido h1 .logo-inicio{
+    font-size: 10px;
+    
+  }
+  
+  
+  /*saludo de fondo (div)*/
+  #inicio .contenido .saludo-kalu  {
+   
+    justify-content: space-around;
+    text-align: center;
+    margin: 35px;
+    height: 77vh;
+    
+    
+    
+  }
+  
+  /* saludo fondo (titulo bienvenida)*/
+  #inicio .contenido .titulo-bienvenida{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color:rgb(255, 255, 255);  
+   
+   
+  }
+ 
+  /*seccion de contacto*/
+  #contacto .titulo-seccion{
+    text-align: center;
+    font-size:35px;
+    margin-top: 200px;
+  }
+  #contacto{
+    padding: 30px 30px;
+  }
+  #contacto .contenedor-form .fila_mitad{
+  
+    margin-bottom: 15px;
+    display: block;
+    
+  }
+  #contacto .contenedor-form .fila_mitad input{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /*secccion del footer 280px*/
+  footer{
+    background-color: #080808;
+    color:white ;
+    text-align: center;
+    padding: 30px 0;/*el alto del footer*/
+  }
+  
+  /*caracteristicas con las que se va a definir el futer de manera estandarizada*/
+    
+  .div_footer{
+   text-align: center;
+   
+  }
+  .texto_footer{
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 450;
+  }
+  
+  .titulo_footer{
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+    
+  }
+  
+  .enlace_footer{
+    color: orange;
+  }
+  .enlace_footer:hover{
+    text-decoration: none;
+  }
+  .div_footer .img-footer{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    left: auto;
+  }
+  
+  .div_footer .img-footer-marcas img{
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+
+
+
+/*----------------
+--------550-------
+------------------*/
+
+
+@media screen and (max-width:550px) 
+  
+{
+   /*imagen fondo*/
+  #inicio{
+    background:linear-gradient(rgba(0, 0, 0, 0.301),rgb(0,0,0,0.2)),url(fondazo.png);
+    background-position: center center;
+    height:60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  /*para que no se vean las redes*/
+  .redes a {
+    display: none;
+  } 
+
+  /*para que no se vean los enslaces*/
+  nav{
+    display: none;
+
+  }
+  /*para el nav resposivo */
+  nav.responsive{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.836);
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 10px 0;
+
+  }
+
+  nav.responsive ul{
+    display: block !important;
+    text-align: center;
+  }
+  nav.responsive ul a:hover{
+    text-decoration: underline;
+    text-decoration-color:orange ;
+  }
+
+  nav.responsive ul li{
+    margin: 5px 0;
+  }
+
+    /*header(barra de navegacion)*/
+  #inicio .contenido header{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    top: 0;
+  }
+  /*tres rayitas*/
+  .contenido-header #icono-nav {   
+    
+    align-items: left;
+    color:  rgb(255, 255, 255);
+    height: 21px;
+    object-position: right;
+    display: inline-block;
+    margin-left:40vw;
+  }
+  /*logo de kalu nav*/
+  #inicio .contenido h1 .logo-inicio{
+    font-size: 10px;
+    
+  }
+  
+  
+  /*saludo de fondo (div)*/
+  #inicio .contenido .saludo-kalu  {
+   
+    justify-content: space-around;
+    text-align: center;
+    margin: 35px;
+    height: 50vh;
+    
+    
+    
+  }
+  
+  /* saludo fondo (titulo bienvenida)*/
+  #inicio .contenido .titulo-bienvenida{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    color:rgb(255, 255, 255);  
+   
+   
+  }
+ 
+  /*seccion de contacto*/
+  #contacto .titulo-seccion{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  #contacto{
+    padding: 30px 30px;
+  }
+  #contacto .contenedor-form .fila_mitad{
+  
+    margin-bottom: 15px;
+    display: block;
+    
+  }
+  #contacto .contenedor-form .fila_mitad input{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+ 
+
+  
+  
+  
+  /*secccion del footer 280px*/
+  footer{
+    background-color: #080808;
+    color:white ;
+    text-align: center;
+    padding: 30px 0;/*el alto del footer*/
+  }
+  
+  /*caracteristicas con las que se va a definir el futer de manera estandarizada*/
+    
+  .div_footer{
+    
+   text-align: center;
+   
+  }
+  .texto_footer{
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 450;
+  }
+  
+  .titulo_footer{
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+    
+  }
+  
+  .enlace_footer{
+    color: orange;
+  }
+  .enlace_footer:hover{
+    text-decoration: none;
+  }
+  .div_footer .img-footer{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    left: auto;
+  }
+  
+  .div_footer .img-footer-marcas img{
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+}
+
+
+
